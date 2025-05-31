@@ -1,4 +1,4 @@
-word = input("Input: ")
+
 
 # ==== Import JSON ====
 
@@ -56,4 +56,5 @@ def generate(noWords):
 # ===================================================
 
 if "__name__" == "__main__":
+    word = input("Input: ")
     print(generate())
