@@ -1,0 +1,740 @@
+Willow — 02/12/2024 09:11
+this is pog news
+also ur nearly healed right?
+Harmful Willow[:3]
+ — 02/12/2024 09:11
+Improvised a 3 hours set completely in trance in a venue with a poorly calibrated smoke machine while dropping some random hakken tonight, and like I'm still alive
+Mad fun 10/10 would recommend
+Willow — 02/12/2024 09:12
+wtf is hakken
+also, shockingly u continue to survive each week
+but dw so do i
+not sure how i am going to survive christmas we shall see
+my mom has invited me to a rave w/ her
+is that meant to be a gif
+its not loading
+Harmful Willow[:3]
+ — 02/12/2024 09:14
+Image
+Hakken 🤩
+Harmful Willow[:3]
+ — 02/12/2024 09:14
+Was sober tonight ☝️
+Sober rave 🤩🤩
+Willow — 02/12/2024 09:15
+booooooooooo
+sobriety is for nerds
+Harmful Willow[:3]
+ — 02/12/2024 09:15
+I also gained a nerf gun
+Willow — 02/12/2024 09:15
+come campus w nerf gun
+Harmful Willow[:3]
+ — 02/12/2024 09:15
+For free
+It's in my bag rn lmao
+Image
+Willow — 02/12/2024 09:17
+where tf even are u
+Harmful Willow[:3]
+ — 02/12/2024 09:21
+Da streets
+amethyst[MEOW]
+ — 02/12/2024 10:04
+:MA_StressinTfOutHyperVentShocked:
+ruthlessdove — 05/12/2024 23:55
+Is there a discord for first year cs?
+techfare the tank engine — 05/12/2024 23:59
+https://discord.gg/8hKfSn2N
+very dead though
+ruthlessdove — 10/12/2024 18:43
+Thanks
+nevarrr[dead]
+ — 04/01/2025 15:09
+btw anyone waiting on module registration to open for cs139 and cs141, you can see when the lectures are in advance here: https://tabula.warwick.ac.uk/profiles/department/cs/timetables?from=1735430400000&to=1739232000000&modules=cs141&modules=cs139&eventTypes=LEC&eventTypes=SGTL&_showTimetableEvents=false&showTimetableEvents=true&_showSmallGroupEvents=false&showSmallGroupEvents=true
+Luka — 07/01/2025 22:17
+does anyone have the link for requesting a change to seminar groups
+nevarrr[dead]
+ — 07/01/2025 22:19
+https://forms.office.com/e/2tgNQaNGrZ
+Microsoft Forms
+Luka — 07/01/2025 22:19
+thank u 🙏
+nevarrr[dead]
+ — 07/01/2025 22:19
+welc
+Blue Jumper — 10/01/2025 11:48
+Did James put the slides from the welcome back talk on Monday anywhere. Or basically when are the exam periods?
+Retired Gamer Flynt — 10/01/2025 11:50
+Not sure if slides have been published, you'd likely get an email with them on.
+Exam times are here: https://warwick.ac.uk/services/academicoffice/modules_marks_assessments/students/examination_dates
+Examination Dates and Times
+Information regarding examination periods
+Luka — 10/01/2025 15:11
+https://warwick.ac.uk/fac/sci/dcs/teaching/general_matters/year-1_term-2_welcome-back.pdf
+mc — 10/01/2025 17:29
+Could I get some help with some question?
+Image
+Luna! — 11/01/2025 00:26
+Use Fermat's little theorem
+Oh wait
+It depends on what you've been taught actually if this is an assignment
+mc — 11/01/2025 02:28
+Yh haven’t been taught that that’s the thing
+I emailed module organiser
+uǝʍO — 11/01/2025 10:14
+Image
+Willow — 11/01/2025 10:21
+hello owen!
+Blue Jumper — 11/01/2025 20:58
+This isn't for 131 is it? Is there seminar exercises out we've not been told about
+mc — 11/01/2025 22:45
+It’s for 131 but it’s the exam paper for 2024, I was thinking since we covered this topic I should be able to answer the q but was having trouble
+Alia — 12/01/2025 09:49
+I dont remember the exact thing but you were taught something about either powers or multiplication in modular arithmetic that would allow you to reduce the exponent and that should make things easier
+Ed[ᶻz𐰁]
+ — 12/01/2025 12:04
+GCD(5, n) = 1 means that 5 does not divide n. Therefore, you have four possible cases for the remainder of n/5. The remainder is either 1, 2, 3 or 4. 
+
+From there, you can consider each of the cases; the general strategy for each of the cases is to find a "loop" - that is, some n^x that has the remainder as some n^y.
+
+I'll do the case of remainder=2. 
+
+n =5= 2. 
+n^2 =5= 2n =5= 4. 
+n^3 =5= 4n =5= 8 =5= 3.
+n^4 =5= 3n =5= 6 =5= 1.
+n^5 =5= 1n =5= 2.
+
+
+So now we have a loop between n^1 and n^5, since their remainders are both 2. Therefore we know n^9 will have the same remainder since applying *n 4 times to n^1 lead to the same remainder for n^5. And the same for n^13, n^17 etc.
+
+n^2024 = n^2020 * n^4, and n^2020 is divisible by 4 (the length of our loop things). Hence n^2024 has the same remainder as n^4, which is 1.
+
+You'll have to apply this to the 3 other remainder cases but you can get pretty fast at solving these kinds of problems! 
+
+Also, you're guaranteed to find a loop in at most 5 operations since mod 5 only has 5 possible values (0, 1, 2, 3, 4) -> might actually be 4 because if something has remainder 0, then it sets the latter powers to 0. Since you don't get a calculator in 131 (and aren't taught more powerful techniques), you'll always get a fairly small number so this method is fine. 
+mc — 12/01/2025 12:31
+Wow, thank you very much.
+I think the piece I was missing was using the fact that multiples of 5 are periodic so you can form that loop.
+ali - wordle opposition — 12/01/2025 12:34
+if you did CS140, you may have come across primitive roots which iirc is this concept
+willow tree — 14/01/2025 19:12
+whoever did the hot to go animation in functional programming today that was iconic af
+Gamer Play Outer Wilds🔴 — 14/01/2025 19:12
+fr
+and the 3d render of a monkey was fucking nuts
+willow tree — 14/01/2025 19:13
+fr mine wasn't nearly as cool
+the monkey was mind blowing
+i wish we could've seen the rest but ig macbooks are expensive
+Riley — 14/01/2025 20:24
+real crime was that the speakers werent working
+couldve seen as many people as possible do the arm movements
+Riley — 14/01/2025 20:25
+which one was yours if you dont mind me asking
+willow tree — 14/01/2025 21:09
+i would've done the hot to go dance if i wasn't filming </3
+willow tree — 14/01/2025 21:09
+...chuuya
+Riley — 14/01/2025 21:37
+..ah
+blimey
+willow tree — 14/01/2025 22:03
+Image
+if chuuya has a million fans im one of them. if chuuya has ten fans im one of them. if chuuya has one fan then that is me. if chuuya has no fans that means im no more on this earth. if the world is against chuuya, i am against the world. i love chuuya till my last breath <3
+techfare the tank engine — 14/01/2025 22:16
+Alex Dixon the goat
+willow tree — 14/01/2025 22:22
+i hit the screenshot length limit on my phone
+Image
+noooo not discords compression </3 its all me talking about chuuya
+they should put loving a character to this degree in the dsm-5 /j
+Harmful Willow[:3]
+ — 14/01/2025 22:27
+(you can open in browser for no compression)
+Riley — 14/01/2025 22:47
+did you collect your prize?
+willow tree — 14/01/2025 22:54
+i think i should be put in jail for being this crazy about a character not rewarded but yeah i got a little grey axe guy
+Archive Pizza — 14/01/2025 22:57
+Wait that’s what your year’s prize is?
+willow tree — 14/01/2025 22:57
+is it meant to be something else?
+Archive Pizza — 14/01/2025 22:57
+Our year had non functional tokens
+Retired Gamer Flynt — 14/01/2025 22:57
+Yeah, this year has NFTs
+I actually forgot they were a thing, so I was rather shocked when I got a message from a certain gamer frep that they got an NFT :kekw~3:
+willow tree — 14/01/2025 23:00
+monkey render person getting a bored ape nft would be really funny
+
+You're right. Now I just need to convince my psyche to do the same. 
+
+nevarrr
+dead
+ — 20/02/2025 18:13
+go RAAAAAAAAAAAH at it
+
+2
+
+1
+
+om nom — 20/02/2025 18:15
+
+@om nom
+It's just not fun anymore lmao.
+
+BitchBoy — 20/02/2025 18:35
+you reach a moment in each year of your degree where you think this! Im in my 5th year and still question why im doing a degree (They won’t let me leave! help me!)
+
+5
+
+Harmful Willow
+:3
+ — 20/02/2025 18:35
+Yeah same feeling here
+[18:36]
+Just drop some caffeine, find a rhythm that you can withstand for those modules you find less interesting and you'll be fine
+
+Gamer Play Outer Wilds🔴 — 20/02/2025 18:37
+yeah thats how i feel right about now as well
+
+mylifeisindisarray
+ᓚᘏᗢ
+ — 20/02/2025 19:25
+Also remember even 15 minutes on a module you hate is better than 0
+
+om nom — 20/02/2025 23:54
+Thanks everyone for the advice!
+[23:55]
+It's really helpful to know that I'm not alone. :)
+
+
+nevarrr
+dead
+ — 20/02/2025 23:56
+I mean fwiw obvs your specific experiences are unique to you, but broadly speaking a lot of us have gone through pretty similar things before, so you're never gonna be alone
+[23:56]
+most questions are not as daft as you might think as well, another common problem, so like honestly ask away whether it's in the server or in someone's DMs (e.g. my DMs are open)
+
+1
+21 February 2025
+
+mylifeisindisarray
+ᓚᘏᗢ
+ — 21/02/2025 00:14
+My DMs are also open, I'm still trying to learn how to study but I think I'm finally getting somewhere (maybe)
+22 February 2025
+
+@om nom
+Chat, how do I motivate myself to do my degree? CS141 seems too interesting to stop doing.  (edited)
+
+ark — 22/02/2025 03:38
+i was hella motivated in sem 1
+[03:39]
+i lost it and cant get it back lol
+[03:40]
+proof: half past 3 and on discord for the past like 5 hours
+
+@ark
+proof: half past 3 and on discord for the past like 5 hours
+
+Harmful Willow
+:3
+ — 22/02/2025 04:01
+Fr
+
+@ark
+i was hella motivated in sem 1
+
+Luna! — 22/02/2025 11:17
+I was hella motivated in term 1 before my parents ruined my life at the start of term 2
+[11:17]
+I can barely motivate myself to attend lectures anymore
+
+@Luna!
+I was hella motivated in term 1 before my parents ruined my life at the start of term 2
+
+ark — 22/02/2025 11:19
+jesus, i hope u can get urself into a better situation
+27 February 2025
+
+Luka — 27/02/2025 14:14
+are there any more upcoming talks / events this term? i've got one thing left for my PDP 
+
+@Luka
+are there any more upcoming talks / events this term? i've got one thing left for my PDP 
+
+nevarrr
+dead
+ — 27/02/2025 14:26
+we have lightning talks i think next week
+[14:26]
+unsure if there's any slots left for that but you could ask the academic officers about this
+[14:27]
+(not sure if just attending could count as a pdp point, but again, prolly a question for the academics)
+
+@Luka
+are there any more upcoming talks / events this term? i've got one thing left for my PDP 
+
+BitchBoy — 27/02/2025 14:53
+could help add some features to tech team projects theres a new apollo cog that could do with some updates. do some open source contributions. counts towards pdp i believe?
+
+nevarrr
+dead
+ — 27/02/2025 14:53
+open source would count yeah
+[14:54]
+good shout
+
+Luka — 27/02/2025 14:54
+yeah both good ideas thanks 
+
+BitchBoy — 27/02/2025 14:54
+if u want I could send you some tasks… I should do them but im putting it off
+
+@BitchBoy
+if u want I could send you some tasks… I should do them but im putting it off
+
+Luka — 27/02/2025 14:55
+yeah sure thanks
+
+ali - wordle opposition — 27/02/2025 15:25
+!pr
+
+Apollo
+APP
+ — 27/02/2025 15:25
+You can make a pull request for that! (https://github.com/UWCS/apollo/pulls)
+
+@Luka
+are there any more upcoming talks / events this term? i've got one thing left for my PDP 
+
+Harmful Willow
+:3
+ — 27/02/2025 15:29
+Just do a git commit
+
+@Harmful Willow
+
+:3
+Just do a git commit
+
+Josh — 27/02/2025 15:53
+What's git?
+
+Retired Gamer Flynt — 27/02/2025 15:57
+Actual Skull Emoji moment
+
+Luka
+are there any more upcoming talks / events this term? i've got one thing left for my PDP 
+
+om nom — 27/02/2025 16:00
+What is a PDP? I keep hearing it from time-to-time, but idek what it stands for. 
+
+@om nom
+What is a PDP? I keep hearing it from time-to-time, but idek what it stands for. 
+
+nevarrr
+dead
+ — 27/02/2025 16:03
+PDP stands for professional development plan, it's part of CS133 - Professional Skills
+[16:04]
+effectively you write a document bullshitting that you know how you're gonna map career related stuff out then come up with tangentially related activities that could support that
+
+om nom — 27/02/2025 16:07
+Oh ew that sounds pointless.
+
+nevarrr
+dead
+ — 27/02/2025 16:11
+the module is required for bcs accreditation unfortunately
+
+3
+
+@Josh
+What's git?
+
+Harmful Willow
+:3
+ — 27/02/2025 17:33
+Maybe git is the all nighters we pulled all along
+
+@Josh
+What's git?
+
+Alia — 27/02/2025 22:18
+Gonna need to know if this is serious chief
+
+@nevarrr
+
+dead
+(not sure if just attending could count as a pdp point, but again, prolly a question for the academics)
+
+Alia — 27/02/2025 22:19
+@Luka attending doesnt count unfortunately, and afaik we've got all speakers for the slot
+[22:19]
+If you wanted, i believe @Mole1424 got a pdp point for doing an open source commit
+[22:20]
+So check out https://www.github.com/UWCS and see if there's any issues you want to work on
+GitHub
+University of Warwick Computing Society
+The official academic society for computer science at the University of Warwick. - University of Warwick Computing Society
+
+[22:20]
+And ask in ⁠tech-team if you have any questions
+
+ali - wordle opposition — 27/02/2025 22:27
+@Luka that pull request is fire for pdp
+[22:27]
+you are contributing to open source
+[22:27]
+you are expanding your prospects
+[22:28]
+mike joy will see your enthusiasm for open source development and expanding your coding which are essential assets to a successful career 
+
+@Alia
+Gonna need to know if this is serious chief
+
+Josh — 27/02/2025 22:30
+It is and I can say it with a straight face 
+
+1
+[22:30]
+I use file explorer
+
+@om nom
+What is a PDP? I keep hearing it from time-to-time, but idek what it stands for. 
+
+ali - wordle opposition — 27/02/2025 22:32
+you lucky $£#?%&
+
+1
+
+@Alia
+@Luka attending doesnt count unfortunately, and afaik we've got all speakers for the slot
+
+BitchBoy — 27/02/2025 22:33
+Luka’s already got a commit in Apollo!
+
+ali - wordle opposition
+@Luka that pull request is fire for pdp
+
+ali - wordle opposition — 27/02/2025 22:33
+@BitchBoy !!!!!!
+
+BitchBoy — 27/02/2025 22:34
+?
+
+ali - wordle opposition — 27/02/2025 22:34
+nvm
+
+@Josh
+I use file explorer
+
+Archive Pizza — 27/02/2025 22:43
+I raise my glass to you as someone who uses my own memory and commenting out old code
+
+1
+
+nevarrr
+dead
+ — 27/02/2025 22:45
+inhales
+
+SCREEEEEEEAMS
+
+@ali - wordle opposition
+you lucky $£#?%&
+
+Harmful Willow
+:3
+ — 27/02/2025 23:13
+It really wasn't that bad tbh
+[23:13]
+As long as you did some stuff throughout the year you're chilling
+
+ali - wordle opposition — 27/02/2025 23:13
+but i hated the whole module
+
+Harmful Willow
+:3
+ — 27/02/2025 23:13
+Which you should do 
+
+@ali - wordle opposition
+but i hated the whole module
+
+Harmful Willow
+:3
+ — 27/02/2025 23:13
+Hated the forced attendance at labs, and class test was just copy/paste
+[23:13]
+The rest was fine really
+[23:14]
+People in cs complain too much about some stuff tbh
+
+@Harmful Willow
+
+:3
+Hated the forced attendance at labs, and class test was just copy/paste
+
+Gamer Play Outer Wilds🔴 — 27/02/2025 23:47
+something very fun this year was the fact they forced us to attend the seminars where other people did presentations 
+[23:48]
+otherwise we'd lose 10% of our own scores from the presentation.
+28 February 2025
+
+Josh
+It is and I can say it with a straight face 
+
+Retired Gamer Flynt — 28/02/2025 08:25
+Please learn git, it will genuinely improve your life
+
+1
+
+tech adam — 28/02/2025 09:44
+something something cs133
+
+@ali - wordle opposition
+but i hated the whole module
+
+Ed
+ᶻz𐰁
+ — 28/02/2025 11:43
+Same; only useful part was learning bash, Linux, and LaTeX in the labs
+
+@Ed
+
+ᶻz𐰁
+Same; only useful part was learning bash, Linux, and LaTeX in the labs
+
+nevarrr
+dead
+ — 28/02/2025 11:45
+learning latex
+
+
+5
+
+@nevarrr
+
+dead
+learning latex
+
+Retired Gamer Flynt — 28/02/2025 11:48
+I think mine included Big Smoke's order
+
+Ed
+
+ᶻz𐰁
+Same; only useful part was learning bash, Linux, and LaTeX in the labs
+
+Archive Pizza — 28/02/2025 11:48
+For me I’d say it was bash, Linux and some of the ethics related stuff
+
+@Retired Gamer Flynt
+I think mine included Big Smoke's order
+
+nevarrr
+dead
+ — 28/02/2025 11:50
+something something university values freedom of speech in academia something something
+
+@nevarrr
+
+dead
+learning latex
+
+Blue Jumper — 28/02/2025 13:44
+Mine
+
+
+
+3
+[13:44]
+Not as iconic I know
+
+@Blue Jumper
+Mine
+
+Willow — 28/02/2025 17:49
+pussy shit he should've hit it through his nose
+01 March 2025
+
+Harmful Willow
+:3
+ — 01/03/2025 02:01
+Uhm actually 
+[02:01]
+It's not "only water", it's water based glycerol 
+[02:01]
+distilled water to be precise 
+30 April 2025
+
+Minty — 30/04/2025 15:11
+heyy, does anyone know if citations count towards the word count for cs133 essay?
+
+nevarrr
+dead
+ — 30/04/2025 15:19
+shouldn't do
+
+Minty — 30/04/2025 17:17
+that’s what I think, but then feedback like “overreliance on citations” wouldn’t make much sense
+
+nevarrr
+dead
+ — 30/04/2025 17:28
+possibly more targeting the idea of critically analysing sources rather than just stating them?
+
+Minty — 30/04/2025 17:41
+Hm, could be. I wish they included that information in the instructions. They stated what’s not counted, but citations are not on the list
+
+nevarrr
+dead
+ — 30/04/2025 17:44
+bizarre
+[17:45]
+they're never usually counted in other assessments
+
+1
+
+@Minty
+that’s what I think, but then feedback like “overreliance on citations” wouldn’t make much sense
+
+Blue Jumper — 30/04/2025 19:15
+It's not overreliance, just that they aren't necessarily words (mine are numerical) so it would be unfair to count them as such. If you say So and So [n] claims ... then So and So are definitely words, regardless of if you're citing them as [n] or you put the year after, but if you just say "statement" (So and So, yyyy), then that wouldn't count
+[19:18]
+I'm almost certain that anything you use to produce a document won't count them as words if you've used its automated citations. (Did you do them manually?)
+
+@Blue Jumper
+It's not overreliance, just that they aren't necessarily words (mine are numerical) so it would be unfair to count them as such. If you say So and So [n] claims ... then So and So are definitely words, regardless of if you're citing them as [n] or you put the year after, but if you just say "statement" (So and So, yyyy), then that wouldn't count
+
+Minty — 30/04/2025 19:42
+So if I embed a paragraph from someone else’s work for context and wrap it in a block quote, would that be counted?
+
+@Minty
+So if I embed a paragraph from someone else’s work for context and wrap it in a block quote, would that be counted?
+
+Blue Jumper — 30/04/2025 19:42
+No idea, sorry (edited)
+[19:43]
+I'd say maybe
+[19:43]
+But idk
+
+Blue Jumper
+I'm almost certain that anything you use to produce a document won't count them as words if you've used its automated citations. (Did you do them manually?)
+
+Minty — 30/04/2025 19:43
+I just use vim to write markdown, and pipe it through sed and wc whenever I feel like it
+
+nevarrr
+dead
+ — 30/04/2025 19:43
+quotes count afaik
+
+Minty — 30/04/2025 19:44
+goddamn
+
+@Minty
+I just use vim to write markdown, and pipe it through sed and wc whenever I feel like it
+
+Blue Jumper — 30/04/2025 19:44
+Wow
+[19:45]
+I haven't even touched vim, I'm too scared
+
+Minty — 30/04/2025 19:45
+Don’t be. It’s extremely liberating
+
+@nevarrr
+
+dead
+quotes count afaik
+
+Blue Jumper — 30/04/2025 19:45
+Bsc if you made them read over the word counts worth of quotes, that would definitely be over the word count
+
+nevarrr
+dead
+ — 30/04/2025 19:45
+vim is too demented for my liking the vast majority of the time
+
+@Blue Jumper
+Bsc if you made them read over the word counts worth of quotes, that would definitely be over the word count
+
+nevarrr
+dead
+ — 30/04/2025 19:46
+falls under the "don't piss off the markers" idea
+
+1
+[19:46]
+even if you could get around something on a technicality, there's probably other areas where they can dock you marks so it's not worth it
+
+Minty — 30/04/2025 19:49
+I don’t mind them counting towards, I just need to now before I send it
+[19:49]
+They really shouldn’t count if these are translations, but whatever
+
+nevarrr
+
+dead
+vim is too demented for my liking the vast majority of the time
+
+Minty — 30/04/2025 19:50
+Have you tried emacs?
+
+1
+
+@nevarrr
+
+dead
+vim is too demented for my liking the vast majority of the time
+
+Edward O’D — 30/04/2025 20:14
+blasphemy
+
+nevarrr
+dead
+ — 30/04/2025 20:14
+lies
+
+Edward O’D — 30/04/2025 20:19
+vim is the closest I could basically get to writing as I think
+
+@Edward O’D
+vim is the closest I could basically get to writing as I think
+
+Embezzlement Jakub — 30/04/2025 20:21
+don't think much do you
+
+Edward O’D — 30/04/2025 20:24
+no need to if using vim
+[20:24]
+flow state and that
+
+Retired Gamer Flynt — 30/04/2025 21:56
+I need to get more comfortable using vim over the summer
+[21:57]
+Well, neovim at least
+[21:57]
+Which apparently is its own rabbit hole 
+
+@Retired Gamer Flynt
+I need to get more comfortable using vim over the summer
+
+Oscar Topliss — 30/04/2025 22:05
+Be careful, you’ll end up using other programs and tapping J out of instinct before realising they don’t have a vim mode 
+
+1
+19 May 2025
+
+Retired Academic Louis — 19/05/2025 22:35
+126 revision session slides + answers out soon  (defo did not expect to be uploading my ans so might be crossing things + adding things in  )
+
+Retired Academic Louis — 19/05/2025 22:43
+Oh and if anyone has any questions from the 2023 paper (or can't read my writing in my solutions lmao) feel free to dm 
