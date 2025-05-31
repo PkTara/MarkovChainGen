@@ -45,7 +45,7 @@ def nextWord(word):
 
     return list(words[word].keys())[0]
 
-def printWords(noWords):
+def generate(noWords):
     output = ""
     for i in range(noWords):
         output += " " + word
@@ -56,4 +56,4 @@ def printWords(noWords):
 # ===================================================
 
 if "__name__" == "__main__":
-    print(printWords())
+    print(generate())
