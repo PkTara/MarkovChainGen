@@ -1,22 +1,6 @@
 import matplotlib.pyplot as plt 
 import networkx as nx
-
-# == logging setup
-
-# import logging
-# logger = logging.getLogger(__name__)
-# logging.basicConfig(
-#     level=logging.DEBUG,
-#     format="%(asctime)s - %(levelname)s - %(message)s"
-# )
-
 from log_config import logger
-
-
-
-
-
-
 
 # ==== Deal with args =====
 
@@ -24,17 +8,23 @@ import sys
 args = sys.argv
 
 if len(args) > 1:
-    file = args[1]
+    file_path = args[1]
 else: # default file
-    file = "weights.json"   # default
+    file_path = "weights.json"   # default
     logger.warning("Default weights being used")
     # print("ERROR: must provide weights as json")
     # quit()
 
+
+import os
+
+module_dir = os.path.dirname(__file__)
+file_path = os.path.join(module_dir, "weights",  file_path)
+
 # ==== Import JSON ====
 
 import json
-with open(file) as f:
+with open(file_path) as f:
     global data
     data = json.load(f)
 
@@ -130,5 +120,5 @@ def sequentialGraph(noWords: int, last: str):
 
     # plotGraph()
 
-# sequentialGraph(4, "God")
+sequentialGraph(3, "God")
 # wholeGraph()

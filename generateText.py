@@ -2,7 +2,7 @@
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("file_path", type=str, help="Path to the JSON file containing word frequencies.")
-parser.add_argument("-n", "--noWords", type=int, default=100, help="Number of words to generate. Default is 100.")
+parser.add_argument("-n", "-l", "--noWords", type=int, default=100, help="Number of words to generate. Default is 100.")
 parser.add_argument("-s", "--startWord", type=str, default="the", help="Starting word for text generation. Default is 'the'. Default may error if not found in the text.")
 args = parser.parse_args()
 
