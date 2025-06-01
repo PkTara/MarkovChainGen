@@ -7,6 +7,8 @@ parser.add_argument("-s", "--startWord", type=str, default="the", help="Starting
 args = parser.parse_args()
 
 
+# ========= Parse Arguments ===========
+
 file_path = args.file_path
 noWords = args.noWords
 startWord = args.startWord
