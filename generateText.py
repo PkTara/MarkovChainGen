@@ -1,10 +1,13 @@
 
 
 # ==== Import JSON ====
+import os
 
-file = "bible.json"
+module_dir = os.path.dirname(__file__)
+file_path = os.path.join(module_dir, "bible.json")
+
 import json
-with open(file) as f:
+with open(file_path) as f:
     words = json.load(f)
 
 # ======================
