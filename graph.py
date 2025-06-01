@@ -1,6 +1,23 @@
 import matplotlib.pyplot as plt 
 import networkx as nx
 
+# == logging setup
+
+# import logging
+# logger = logging.getLogger(__name__)
+# logging.basicConfig(
+#     level=logging.DEBUG,
+#     format="%(asctime)s - %(levelname)s - %(message)s"
+# )
+
+from log_config import logger
+
+
+
+
+
+
+
 # ==== Deal with args =====
 
 import sys
@@ -10,6 +27,7 @@ if len(args) > 1:
     file = args[1]
 else: # default file
     file = "weights.json"   # default
+    logger.warning("Default weights being used")
     # print("ERROR: must provide weights as json")
     # quit()
 
@@ -35,7 +53,7 @@ def wholeGraph():
     local_data = dict(list(data.items())[:limit])
     for key, values in local_data.items():
         for value, weight in values.items():
-            print(key, value, weight)
+            logger.info(f"key - {key}, value - {value}, weight - {weight}")
             G.add_edge(key, value, weight=weight)
 
 
@@ -49,35 +67,33 @@ def plotGraph():
     plt.tight_layout()
     plt.show()
 
-def drawGraph(G):
+def drawGraph(G, nodeSize=800, labelFontSize=20, nodeFontSize=4, edgeWidth=1, k=None):
     elarge = [(u, v) for (u, v, d) in G.edges(data=True) if d["weight"] > 0.5]
     esmall = [(u, v) for (u, v, d) in G.edges(data=True) if d["weight"] <= 0.5]
 
-    pos = nx.spring_layout(G, seed=7, k =40)  # positions for all nodes - seed for reproducibility
+    pos = nx.spring_layout(G, seed=7, k=k)  # positions for all nodes - seed for reproducibility
 
     # nodes
-    nx.draw_networkx_nodes(G, pos, node_size=200)
+    colors = [G.nodes[n].get("color", "lightgray") for n in G.nodes()]
+    nx.draw_networkx_nodes(G, pos, node_size=nodeSize, node_color=colors)
 
     # edges
-    nx.draw_networkx_edges(G, pos, edgelist=elarge, width=3)
+    nx.draw_networkx_edges(G, pos, edgelist=elarge, width=edgeWidth)
     nx.draw_networkx_edges(
-        G, pos, edgelist=esmall, width=3, alpha=0.5, edge_color="b", style="dashed"
+        G, pos, edgelist=esmall, width=edgeWidth, alpha=0.5, edge_color="b", style="dashed"
     )
 
     # node labels
-    nx.draw_networkx_labels(G, pos, font_size=4, font_family="sans-serif")
+    nx.draw_networkx_labels(G, pos, font_size=labelFontSize, font_family="sans-serif")
     # edge weight labels
     edge_labels = nx.get_edge_attributes(G, "weight")
     nx.draw_networkx_edge_labels(G, pos, edge_labels)
 
-    ax = plt.gca()
-    ax.margins(0.08)
-    plt.axis("off")
-    # plt.tight_layout()
-    plt.show()
+
+    plotGraph()
 
     # node labels
-    nx.draw_networkx_labels(G, pos, font_size=20, font_family="sans-serif")
+    nx.draw_networkx_labels(G, pos, font_size=labelFontSize, font_family="sans-serif")
     # edge weight labels
     edge_labels = nx.get_edge_attributes(G, "weight")
     nx.draw_networkx_edge_labels(G, pos, edge_labels)
@@ -88,19 +104,20 @@ def drawGraph(G):
 
 from generateText import nextWord
 def sequentialGraph(noWords: int, last: str):
-    first = last
-    last = nextWord(first)
+
 
     for i in range(noWords):
+        first = last
+        last = nextWord(first)
 
         limit = -1 # no limit
         local_data = dict(list(data.items())[:limit])
 
-        print(local_data)
         for value, weight in local_data[first].items():
-            print(first, value, weight)
             G.add_edge(first, value, weight=weight)
 
+        G.nodes[first]["color"] = "green" # so nodes we actually use are green
+        G.nodes[last]["color"] = "green" # complete traversal
         
     drawGraph(G)
 
@@ -113,5 +130,5 @@ def sequentialGraph(noWords: int, last: str):
 
     # plotGraph()
 
-# sequentialGraph(1, "God")
-wholeGraph()
+sequentialGraph(4, "God")
+# wholeGraph()
