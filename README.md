@@ -16,7 +16,7 @@ generateText then loads up a json file, and generates words according to said pr
 
 Attempts to draw graph of all words and probabilities between them. Not currently functional, but makes pretty art.
 
-![Graph Art](./images/art.png)
+![Graph Art](./images/Art.png)
 
 SequentialGenerator works better, but doesn't yet have desired layout.
 
