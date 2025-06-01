@@ -17,7 +17,8 @@ startWord = args.startWord
 import os
 
 module_dir = os.path.dirname(__file__)
-file_path = os.path.join(module_dir, file_path)
+file_path = os.path.join(module_dir, "weights",  file_path)
+
 
 import json
 with open(file_path) as f:

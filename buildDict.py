@@ -15,11 +15,18 @@ limit = args.limit
 
 # ==== Read File and Build Dictionary ====
 
+import os
+
+module_dir = os.path.dirname(__file__)
+file_path = os.path.join(module_dir, "texts",  file)
+outputFile = os.path.join(module_dir, "weights", outputFile)
+
+
 try:
-    text = open(file, encoding="utf-8").read()
+    text = open(file_path, encoding="utf-8").read()
     text = text.split()
 except FileNotFoundError:
-    print("ERROR: File not found")
+    print(f"Error: File not found. Given path: {file_path}")
     quit()
      
 
