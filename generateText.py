@@ -1,10 +1,21 @@
 
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("file_path", type=str, help="Path to the JSON file containing word frequencies.")
+parser.add_argument("-n", "--noWords", type=int, default=100, help="Number of words to generate. Default is 100.")
+parser.add_argument("-s", "--startWord", type=str, default="the", help="Starting word for text generation. Default is 'the'. Default may error if not found in the text.")
+args = parser.parse_args()
+
+
+file_path = args.file_path
+noWords = args.noWords
+startWord = args.startWord
 
 # ==== Import JSON ====
 import os
 
 module_dir = os.path.dirname(__file__)
-file_path = os.path.join(module_dir, "bible.json")
+file_path = os.path.join(module_dir, file_path)
 
 import json
 with open(file_path) as f:
@@ -41,15 +52,13 @@ def nextWord(word):
     return(choice)
 
 
-
-
-    # print(list(words[word].keys()))
-    print(frequencies)
-
-    return list(words[word].keys())[0]
-
-def generate(noWords):
+def generate(startWord: str, noWords=100):
     output = ""
+    word = startWord
+
+    if word not in words:
+        raise ValueError(f"Word '{word}' not found in the dictionary. You are currently using {file_path}. Try again with a different word.")
+    
     for i in range(noWords):
         output += " " + word
         word = nextWord(word)
@@ -58,6 +67,6 @@ def generate(noWords):
 
 # ===================================================
 
-if "__name__" == "__main__":
-    word = input("Input: ")
-    print(generate())
+if __name__ == "__main__":
+    # startWord = input("Input: ")
+    print(generate(startWord, noWords=noWords))
