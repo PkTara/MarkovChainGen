@@ -130,5 +130,5 @@ def sequentialGraph(noWords: int, last: str):
 
     # plotGraph()
 
-sequentialGraph(4, "God")
+# sequentialGraph(4, "God")
 # wholeGraph()
